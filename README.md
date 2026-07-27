@@ -329,10 +329,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 MIT — see [LICENSE](LICENSE) for details.
 
----
-
-<div align="center">
-
-**Built with 🔐 by [icyz](https://github.com/icy000z)**
-
-</div>
