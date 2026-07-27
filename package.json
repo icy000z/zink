@@ -1,0 +1,55 @@
+{
+  "name": "zink-vault",
+  "version": "1.0.0",
+  "description": "Smart .env vault — encrypt, sync, diff, and manage environment variables. Git-safe team sharing. Never leak secrets again.",
+  "type": "module",
+  "bin": {
+    "zink": "./bin/zink.js"
+  },
+  "main": "./src/index.js",
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/zink.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/ bin/ tests/",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "vault",
+    "secrets",
+    "encrypt",
+    "environment-variables",
+    "cli",
+    "security",
+    "devtools",
+    "config"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.5.0",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fast-glob": "^3.3.3",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.1"
+  }
+}
