@@ -7,7 +7,6 @@
 Git-safe team sharing. Never leak secrets again.
 
 [![CI](https://github.com/icy000z/zink/actions/workflows/ci.yml/badge.svg)](https://github.com/icy000z/zink/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/zink-vault.svg)](https://www.npmjs.com/package/zink-vault)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org)
 
