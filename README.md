@@ -40,7 +40,7 @@ zink decrypt
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 # Install globally
@@ -65,7 +65,7 @@ git commit -m "Add encrypted environment vault"
 
 ---
 
-## 📖 Commands
+## Commands
 
 ### `zink init`
 Initialize a new vault in your project.
@@ -247,7 +247,7 @@ zink import config.json -e staging    # Import into specific env
 
 ---
 
-## 🔒 Security
+## Security
 
 Zink uses industry-standard encryption:
 
@@ -264,7 +264,7 @@ The `.env.vault` file is safe to commit — without the master password, the dat
 
 ---
 
-## 📁 File Overview
+## File Overview
 
 | File | Purpose | Git? |
 |------|---------|------|
@@ -275,7 +275,7 @@ The `.env.vault` file is safe to commit — without the master password, the dat
 
 ---
 
-## 🔄 Team Workflow
+## Team Workflow
 
 ```
 Developer A                        Developer B
@@ -291,7 +291,7 @@ Share the master password securely (password manager, in-person, etc.) — **nev
 
 ---
 
-## 🤖 CI/CD Integration
+## CI/CD Integration
 
 ```yaml
 # GitHub Actions example
@@ -312,20 +312,14 @@ Use `zink scan --strict` in CI to prevent secret leaks:
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - **Node.js** ≥ 18.0.0
 - **npm** ≥ 8
 
 ---
 
-## 🤝 Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
-## 📄 License
+## License
 
 MIT — see [LICENSE](LICENSE) for details.
 
