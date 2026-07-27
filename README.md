@@ -15,6 +15,9 @@ Git-safe team sharing. Never leak secrets again.
 
 ---
 
+<img width="1660" height="539" alt="image" src="https://github.com/user-attachments/assets/fa1b0fe7-2b6a-4061-b421-fe4f51d38a26" />
+
+
 ## The Problem
 
 Environment variables are **critical** but managing them is a mess:
