@@ -73,7 +73,7 @@ export async function rmCommand(keys, options) {
   }
 
   // Save
-  const serialized = serialize(envVars, { sort: false, quote: true });
+  const serialized = serialize(envVars, { sort: false });
   await saveEnvFile(cwd, environment, serialized);
 
   logger.br();

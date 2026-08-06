@@ -63,7 +63,7 @@ export async function setCommand(pairs, options) {
   }
 
   // Save
-  const serialized = serialize(envVars, { sort: false, quote: true });
+  const serialized = serialize(envVars, { sort: false });
   await saveEnvFile(cwd, environment, serialized);
 
   // Report

@@ -106,7 +106,7 @@ export function parse(content) {
  * @returns {string} .env file content
  */
 export function serialize(env, options = {}) {
-  const { sort = false, quote = true } = options;
+  const { sort = false, quote = false } = options;
 
   let keys = Object.keys(env);
   if (sort) {

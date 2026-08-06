@@ -156,21 +156,12 @@ export function removeEnvironment(vault, environment) {
  * @returns {Promise<string|null>}
  */
 export async function loadEnvFile(projectDir, environment) {
-  // Try environment-specific file first, then fall back to .env
-  const envSpecific = path.join(projectDir, `.env.${environment}`);
-  const envDefault = path.join(projectDir, '.env');
+  const filename = getEnvFileName(environment);
+  const envPath = path.join(projectDir, filename);
 
   try {
-    return await fs.readFile(envSpecific, 'utf8');
+    return await fs.readFile(envPath, 'utf8');
   } catch {
-    // Fall back to .env only for development
-    if (environment === 'development') {
-      try {
-        return await fs.readFile(envDefault, 'utf8');
-      } catch {
-        return null;
-      }
-    }
     return null;
   }
 }
