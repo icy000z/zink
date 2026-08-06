@@ -74,7 +74,7 @@ export async function importCommand(file, options) {
   }
 
   // Save
-  const serialized = serialize(finalVars, { sort: false, quote: true });
+  const serialized = serialize(finalVars, { sort: false });
   await saveEnvFile(cwd, environment, serialized);
 
   logger.success(

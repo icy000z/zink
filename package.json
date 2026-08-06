@@ -1,6 +1,6 @@
 {
   "name": "zink-vault",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Smart .env vault — encrypt, sync, diff, and manage environment variables. Git-safe team sharing. Never leak secrets again.",
   "type": "module",
   "bin": {

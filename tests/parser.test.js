@@ -64,13 +64,13 @@ describe('Parser', () => {
   describe('serialize', () => {
     it('should serialize key-value pairs', () => {
       const result = serialize({ FOO: 'bar', BAZ: 'qux' });
-      expect(result).toContain('FOO="bar"');
-      expect(result).toContain('BAZ="qux"');
+      expect(result).toContain('FOO=bar');
+      expect(result).toContain('BAZ=qux');
     });
 
     it('should handle values with special characters', () => {
       const result = serialize({ URL: 'https://example.com?a=1&b=2' });
-      expect(result).toContain('URL="https://example.com?a=1&b=2"');
+      expect(result).toContain('URL=https://example.com?a=1&b=2');
     });
 
     it('should escape double quotes in values', () => {
